@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="../reload/reload.js"></script>
+    <title>Home</title>
+</head>
+<body>
+    <nav>
+        <h1>Home Page</h1>
+        <ul>
+            <a href="/">Home</a>
+            <a href="/about">About</a>
+            <a href="/contact-me">Contact Me</a>
+        </ul>
+    </nav>
+    <main>  
+        <button>Press for error</button>
+        <img src="google.png" alt="logo">
+    </main>
+    <script>
+        const error = document.querySelector("button")
+        error.addEventListener("click", (e) => {
+            window.location.href = "/does_not_exist"
+        })
+    </script>
+</body>
+</html>
